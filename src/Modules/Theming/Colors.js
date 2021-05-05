@@ -3,7 +3,14 @@ const constantColors = {
     white: '#FFFFFF',
     black: '#000000',
     transparent: 'transparent',
-    pink: '#ff9cf7'
+    mainColor1: '#30D086', // green
+    mainColor2: '#FF7E39', // orange
+    greys: {
+        1: '#383838',
+        2: '#ACACAC',
+        3: '#868686',
+        4: '#BCBCBC',
+    },
 };
 
 const toRGBA = (hexCode, opacity) => {
@@ -37,10 +44,30 @@ export const colorNames = {
 
 export const darkColors = {
     // auth
-    [colorNames.auth.background]: constantColors.pink, // örnek
+    [colorNames.auth.background]: constantColors.mainColor1,
+    [colorNames.auth.inputBorder]: constantColors.greys[1],
+    [colorNames.auth.inputBackground]: toRGBA(constantColors.greys[1], 10),
+    [colorNames.auth.inputText]: constantColors.greys[1],
+    [colorNames.auth.inputPlaceholder]: toRGBA(constantColors.greys[1], 40),
+    [colorNames.auth.coloredButtonBackground]: constantColors.greys[1],
+    [colorNames.auth.coloredButtonText]: constantColors.white,
+    [colorNames.auth.paleButtonBackground]: constantColors.transparent,
+    [colorNames.auth.paleButtonText]: constantColors.greys[1],
+    [colorNames.auth.appNameText]: constantColors.greys[1],
+   
 };
 
 export const lightColors = {
     // auth
-    [colorNames.auth.background]: constantColors.pink, // örnek
+  
+    [colorNames.auth.background]: constantColors.mainColor1,
+    [colorNames.auth.inputBorder]: constantColors.white,
+    [colorNames.auth.inputBackground]: toRGBA(constantColors.white, 20),
+    [colorNames.auth.inputText]: constantColors.white,
+    [colorNames.auth.inputPlaceholder]: toRGBA(constantColors.white, 60),
+    [colorNames.auth.coloredButtonBackground]: constantColors.white,
+    [colorNames.auth.coloredButtonText]: constantColors.mainColor2,
+    [colorNames.auth.paleButtonBackground]: constantColors.transparent,
+    [colorNames.auth.paleButtonText]: constantColors.white,
+    [colorNames.auth.appNameText]: constantColors.white,
 };

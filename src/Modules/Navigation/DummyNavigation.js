@@ -2,24 +2,22 @@ import React from 'react';
 import { Text, View } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 
-const DummyScreen = props => {
-    return (
-        <View>
-            <Text>Deneme</Text>
-        </View>
-    );
-}
+import AuthScreen from '../../Auth/Screens/AuthScreen';
 
-const DummyStack = createStackNavigator();
+const AuthStack = createStackNavigator();
 
-const DummyNavigation = () => {
+const AuthNavigation = () => {
     return (
-        <DummyStack.Navigator>
-            <DummyStack.Screen
-                name="dummy-screen"
-                component={DummyScreen} />
-        </DummyStack.Navigator>
+        <AuthStack.Navigator>
+            <AuthStack.Screen
+                name="auth-screen"
+                component={AuthScreen}
+                options={{
+                    headerShown:false,
+                }} />
+        </AuthStack.Navigator>
     );
 };
 
-export default DummyNavigation;
+export default AuthNavigation;
+

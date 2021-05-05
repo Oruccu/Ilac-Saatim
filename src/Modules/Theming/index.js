@@ -1,3 +1,4 @@
+export { cn } from './Colors';
 export { 
     useTheme,
     useThemedColors, 
