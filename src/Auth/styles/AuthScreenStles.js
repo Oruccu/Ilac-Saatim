@@ -6,7 +6,7 @@ import { color } from 'react-native-reanimated';
 const styles = (Colors) => StyleSheet.create({
     safeArea: {
         flex: 1,
-        backgroundColor:color.grey,
+        backgroundColor:'grey',
     },
     keyboardAvoiding: {
         flex: 1,
@@ -33,6 +33,9 @@ const styles = (Colors) => StyleSheet.create({
     inputsContainer: {
         minHeight: Metrics.width * 0.5,
         justifyContent: 'center',
+        flex:1,
+        paddingHorizontal: Metrics.textMargin,
+        backgroundColor:'red',
     },
     buttonsContainer: {
         justifyContent: 'center',
@@ -53,17 +56,17 @@ const styles = (Colors) => StyleSheet.create({
     signupTouchable: {
         alignItems: 'center',
         marginTop: Metrics.width * 0.02,
-        backgroundColor: color.grey,
+        backgroundColor: 'grey',
     },
     signupText: {
         fontFamily: Fonts.type.bold,
         fontSize: Fonts.size(18),
-        color: color.grey,
+        color: 'grey',
     },
     appNameText: {
         fontFamily: Fonts.type.logo,
         fontSize: Fonts.size(40),
-        color:color.grey,
+        color:'grey',
         letterSpacing: Metrics.width * 0.02,
     },
 });

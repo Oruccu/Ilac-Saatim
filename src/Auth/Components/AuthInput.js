@@ -2,17 +2,17 @@ import React from 'react';
 
 import { TextInput, View } from 'react-native';
 
-import BorderedBox from '../../../Components/BorderedBox';
-import { useThemedValues, cn } from '../../Theming';
+
+import { useThemedValues, cn } from '../../Modules/Theming';
 
 import getStyles from '../styles/AuthInputStyles';
 
 const AuthInput = props => {
 
-    const {styles, colors} = useThemedValues(getStyles);
+   
 
     return (
-        <BorderedBox borderColor={colors[cn.auth.inputBorder]}>
+        <View borderColor={'red'}>
             <View style={styles.inputContainer}>
                 <TextInput
                     autoCapitalize={props.autoCapitalize}
@@ -24,7 +24,7 @@ const AuthInput = props => {
                     placeholder={props.placeholder}
                     placeholderTextColor={colors[cn.auth.inputPlaceholder]} />
             </View>
-        </BorderedBox>
+        </View>
     );
 };
 

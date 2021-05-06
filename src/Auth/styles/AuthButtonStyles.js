@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
-import {Fonts} from '../../../StylingConstants';
-import { cn } from '../../Theming';
+import {Fonts} from '../../StylingConstans';
+import { cn } from '../../Modules/Theming';
 
 const styles = (Colors) => StyleSheet.create({
     touchable: {
@@ -11,7 +11,7 @@ const styles = (Colors) => StyleSheet.create({
     text: {
         fontFamily: Fonts.type.bold,
         fontSize: Fonts.size(18),
-        color: Colors[cn.colorNames.auth.coloredButtonText],
+        color: 'red',
     },
 });
 

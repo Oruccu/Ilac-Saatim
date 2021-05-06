@@ -1,8 +1,8 @@
 import React from 'react';
 import { Text, TouchableOpacity } from 'react-native';
 
-import BorderedBox from '../../../Components/BorderedBox';
-import { useThemedValues, cn } from '../../Theming';
+
+import { useThemedValues, cn } from '../../Modules/Theming';
 
 import getStyles from '../styles/AuthButtonStyles';
 
@@ -10,8 +10,8 @@ const AuthButton = (props) => {
     const {colors, styles} = useThemedValues(getStyles);
     return (
         <View
-            borderColor={colors.red}
-            backgroundColor={colors.grey}>
+            borderColor={'red'}
+            backgroundColor={'pink'}>
             <TouchableOpacity
                 style={styles.touchable}
                 onPress={props.onPress}

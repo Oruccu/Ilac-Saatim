@@ -8,7 +8,8 @@ import {
     TouchableOpacity,
     Keyboard,
 } from 'react-native';
-
+import AuthInput from '../Components/AuthInput';
+import AuthButton from '../Components/AuthButton';
 import { tn } from '../../Modules/Localization/text';
 import getStyles from '../styles/AuthScreenStles';
 import { useThemedStyles } from '../../Modules/Theming';
@@ -29,7 +30,11 @@ const AuthScreen = props => {
                     {
                             
                                 <View style={styles.inputContainer}>
-                                   <Text >İNPUT</Text>
+                                  <View
+                                        value={props.nameValue}
+                                        onChangeText={props.onChangeText_Name}
+                                        autoCapitalize={'words'}
+                                        placeholder={'username'} />
                                 </View>
                         }
                         <View style={styles.inputContainer}>
