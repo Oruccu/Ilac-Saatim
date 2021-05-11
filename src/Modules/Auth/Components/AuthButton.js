@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, TouchableOpacity } from 'react-native';
 
 
-import { useThemedValues, cn } from '../../Modules/Theming';
+import { useThemedValues, cn } from '../../Theming';
 
 import getStyles from '../styles/AuthButtonStyles';
 

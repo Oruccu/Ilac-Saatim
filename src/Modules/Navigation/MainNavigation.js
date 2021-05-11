@@ -5,7 +5,9 @@ import AuthNavigation from './DummyNavigation';
 const MainNavigation = (props) => {
     return (
         <NavigationContainer>
+            
             <AuthNavigation />
+
         </NavigationContainer>
     );
 };
